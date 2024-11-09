@@ -43,6 +43,7 @@ function AvatarEditPage() {
   const { avatar: initialAvatar, updateAvatar } = useAuth();
   const [avatar, setAvatar] = useState(initialAvatar);
   const navigate = useNavigate();
+  useAuth(true);
 
   function handleSelectProperty(key, value) {
     setAvatar({
